@@ -26,7 +26,7 @@
   - Seeing what happens when **N** becomes very large
   - Known as the **upper bound** of the algorithm
 
-${f(n) = O(g(n))}$
+$${f(n) = O(g(n))}$$
 
 - This equation is stating that there is
   - some constant ${c > 0}$
