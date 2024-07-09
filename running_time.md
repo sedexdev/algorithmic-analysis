@@ -26,7 +26,7 @@
   - Seeing what happens when **N** becomes very large
   - Known as the **upper bound** of the algorithm
 
-$${f(n) = O(g(n))}$$
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;${f(n) = O(g(n))}$
 
 - This equation is requires that there is
   - some constant ${c > 0}$
@@ -46,7 +46,7 @@ $${f(n) = O(g(n))}$$
 - This is mathematically similar to ${O(N)}$ but defines the inverse
 - Now we are defining the **lower bound** of the algorithm
 
-$${f(n) = \Omega(g(n))}$$
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;${f(n) = \Omega(g(n))}$
 
 ![image](./images/big_omega_graph.png)
 
@@ -56,6 +56,7 @@ $${f(n) = \Omega(g(n))}$$
 - We can say that ${f(n) = \theta(n)}$ when
   - $c$<sub>1</sub> ${,}$ $c$<sub>2</sub> ${> 0}$
   - ${n > n}$<sub>0</sub>
-  - ${f(n) < c}$<sub>1</sub> &nbsp;${* g(n)}$
+  - ${f(n) < c}$<sub>1</sub> ${*}$ ${g(n)}$
+  - ${f(n) > c}$<sub>2</sub> ${*}$ ${g(n)}$
 
 ![image](./images/big_theta_graph.png)
