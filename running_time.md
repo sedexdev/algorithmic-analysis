@@ -28,18 +28,34 @@
 
 $${f(n) = O(g(n))}$$
 
-- This equation is stating that there is
+- This equation is requires that there is
   - some constant ${c > 0}$
   - some threshold ${n}$<sub>0</sub> ${> 0}$
 - and that
   - when ${n > n}$<sub>0</sub> then ${f(n)} < {c * g(n)}$
-  - ${c * g(n)}$ is the **upper bound** ${f(n)}$
+  - ${c * g(n)}$ is the **upper bound** of ${f(n)}$ and is denoted by ${O(g(n))}$
+  - This make ${O(g(n))}$ the **worst case scenario**
 
 ![image](./images/big_o_graph.png)
 
 - The area ${n < n}$<sub>0</sub> is not interesting to us
-- **Big O cares about what happens are large values of N**
+- **Big O cares about what happens to very large values of N**
 
 # Big ($\Omega$) Omega
 
+- This is mathematically similar to ${O(N)}$ but defines the inverse
+- Now we are defining the **lower bound** of the algorithm
+
+$${f(n) = \Omega(g(n))}$$
+
+![image](./images/big_omega_graph.png)
+
 # Big ($\theta$) Theta
+
+- This defines both the concepts above
+- We can say that ${f(n) = \theta(n)}$ when
+  - $c$<sub>1</sub> ${,}$ $c$<sub>2</sub> ${> 0}$
+  - ${n > n}$<sub>0</sub>
+  - ${f(n) < c}$<sub>1</sub> &nbsp;${* g(n)}$
+
+![image](./images/big_theta_graph.png)
