@@ -3,7 +3,7 @@
 - Commonly there is a trade off between memory complexity and running time complexity
   - The more memory you commit, the less time it should take to run an algorithm
   - However, if you need to save memory as a critical requirement, this will increase the running time
-- However, this is not generally considered to be an accurate measurement of an algorithms true running time
+- This is not generally considered to be an accurate measurement of an algorithms true running time
   - This is hardware dependent
   - e.g., it will run faster on a powerful computer than it would on a phone
 - The **number of steps** is a better way to gauge running time
