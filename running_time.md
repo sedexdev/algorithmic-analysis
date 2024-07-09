@@ -15,7 +15,7 @@
     - This is **linear O(N)** time complexity
   - What if the same algorithm processes 1000 items in ~100000ms?
     - This is **quadratic O(N^2)** time complexity
-- This example shows the time by way of demonstrating the relationship between the number of items and processing time. Actual time would still be machine dependent so we don't car about it, the input size is the most important
+- This example shows the time by way of demonstrating the relationship between the number of items and processing time. Actual time would still be machine dependent so we don't care about it, the input size is the most important
 
 # Big (O) Ordo
 
