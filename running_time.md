@@ -83,6 +83,12 @@ $f(n) = \Omega(g(n))$
 
 # Examples
 
+### Note
+
+- Generally when thinking about Big O we don't care about the specific ranges of constants that define the upper and lower bounds
+- What's more interesting is the **dominant term** of a function
+- These calculations help (in my case anyway) to rationalise the way Big O works, as the definitions alone are quite abstract without actually working through the calculations
+
 ### Big O
 
 - Consider the function:
@@ -150,3 +156,19 @@ $c$ &lt; $3 + 0$
 $c$ &lt; $3$
 
 - We can say that for threshold $n$ &gt; $34$, $c$ must be less than 3 to be a lower bound of $\Omega(n^2)$
+
+# Dominant Terms
+
+- Big O is concerned with the **dominant term** in an expression
+- This means we drop non-dominant terms and constants to get the running time
+- Consider the polynomial
+
+</br>
+
+$4n^3 + 2n^2 - 12n + 7$
+
+</br>
+
+- Immediately, without using any mathematics, we can say that the rate of increase as $n$ becomes infinitely large is $O(n^3)$
+- The **worst case scenario** for this function is $n^3$ running time complexity
+- The reason for this is that $n^3$ is the term that **grows the fastest as $n$ increases**
