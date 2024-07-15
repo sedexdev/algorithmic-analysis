@@ -56,7 +56,7 @@ $O = | f(n) |$ &leq; $c * |g(n)|$
 - The area $n$ &lt; $n_0$ is not interesting to us
 - **Big O cares about what happens to very large values of N**
 
-# Big ($\Omega$) Omega
+# Big (${\Omega}$) Omega
 
 - This is mathematically similar to $O(N)$ but defines the inverse
 - Now we are defining the **lower bound** of the algorithm
@@ -70,7 +70,7 @@ $f(n) = \Omega(g(n))$
 
 ![image](./images/big_omega_graph.png)
 
-# Big ($\theta$) Theta
+# Big (${\theta}$) Theta
 
 - This defines both the concepts above
 - We can say that $f(n) = \theta(g(n))$ when
@@ -126,7 +126,7 @@ $c$ &geq; $3$
 
 - We can say that for threshold $n$ &gt; $34$, $c$ must be greater than or equal to 3 to be an upper bound of $O(n^2)$
 
-### Big ($\Omega$) Omega
+### Big (${\Omega}$) Omega
 
 - Using the same function for $f(n)$ as in the example above
 
