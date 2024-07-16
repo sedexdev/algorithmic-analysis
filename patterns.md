@@ -23,11 +23,14 @@ This technique is useful for merging 2 arrays into a single sorted array. Sortin
 Given this sample problem, how can this technique be employed?
 
 <pre>
-<i>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in non-decreasing order, and two integers m and n, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</i>
+<i>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in non-decreasing order, 
+and two integers m and n, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</i>
 
 <i>Merge <code>nums1</code> and <code>nums2</code> into a single array sorted in non-decreasing order.</i>
 
-<i>The final sorted array should not be returned by the function, but instead be stored inside the array <code>nums1</code>. To accommodate this, <code>nums1</code> has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. <code>nums2</code> has a length of n.</i>
+<i>The final sorted array should not be returned by the function, but instead be stored inside the array <code>nums1</code>. 
+To accommodate this, <code>nums1</code> has a length of m + n, where the first m elements denote the elements that should 
+be merged, and the last n elements are set to 0 and should be ignored. <code>nums2</code> has a length of n.</i>
 </pre>
 
 - 3 pointers are used
