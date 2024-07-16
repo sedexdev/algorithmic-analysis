@@ -22,16 +22,20 @@ This technique is useful for merging 2 arrays into a single sorted array. Sortin
 
 Given this sample problem, how can this technique be employed?
 
-_You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in non-decreasing order, and two integers m and n, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively._
+<pre>
+<i>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in non-decreasing order, and two integers m and n, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</i>
 
-_Merge <code>nums1</code> and <code>nums2</code> into a single array sorted in non-decreasing order._
+<i>Merge <code>nums1</code> and <code>nums2</code> into a single array sorted in non-decreasing order.</i>
 
-_The final sorted array should not be returned by the function, but instead be stored inside the array <code>nums1</code>. To accommodate this, <code>nums1</code> has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. <code>nums2</code> has a length of n._
+<i>The final sorted array should not be returned by the function, but instead be stored inside the array <code>nums1</code>. To accommodate this, <code>nums1</code> has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. <code>nums2</code> has a length of n.</i>
+</pre>
 
 - 3 pointers are used
+
   - <code>p1 = m - 1</code>
   - <code>p2 = n - 1</code>
   - <code>p = m + n - 1</code>
+
 - Given the following function signature:
 
 <code>def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:</code>
