@@ -18,7 +18,7 @@ This file contains several known patterns with examples. Examples are written in
 
 # Three pointer technique
 
-This technique is useful for merging 2 arrays into a single sorted array. Sorting begins in reverse, starting at the end of the array.
+This technique is useful for tracking multiple indices in multiple lists, such as merging 2 arrays into a single sorted array. For this example, sorting begins in reverse, starting at the end of the array.
 
 Given this sample problem, how can this technique be employed?
 
