@@ -158,7 +158,62 @@ be merged, and the last n elements are set to 0 and should be ignored. <code>num
 
 # Frequency Counter
 
-</br>
+This technique is useful for comparing values when frequency of occurrence is an important factor.
+
+Given this sample problem, how can this technique be employed?
+
+<pre>
+<i>Write a function called <b>same(arr1, arr2)</b> that accepts 2 lists as input and returns True if every value in arr2 corresponds to the square of each value in arr1. The ordering is not important.</i>
+</pre>
+
+- Given the following function signature:
+
+<code>def same(arr1: List[int], arr2: List[int]) -> bool:</code>
+
+- and input:
+
+<code>same([1, 2, 3], [9, 1, 4])</code>
+
+### How it works
+
+Consider the following implementation
+
+<pre>
+<code>
+def same(arr1, arr2) -> bool:
+    # check if either list is None or lengths do not match
+    if arr1 is None or arr2 is None or (len(arr1) != len(arr2)):
+        return False
+    
+    # declare x2 dictionaries to store counts
+    nums1 = same_helper(arr1)
+    nums2 = same_helper(arr2)
+    
+    # check to see if each key in nums1 has the value squared as a key in nums2
+    for key in nums1:
+        if key ** 2 not in nums2:
+            return False
+    
+    # check to see if the value count is equal in both dictionaries
+    for key, value in nums1.items():
+        if value != nums2[key ** 2]:
+            return False
+    
+    # return True if everything passes
+    return True
+
+
+def same_helper(arr) -> dict:
+    # create a dictionary of list values and their frequency
+    nums = {}
+    for el in arr:
+        if el not in nums:
+            nums[el] = 1
+        else:
+            nums[el] += 1
+    return nums
+</code>
+</pre>
 
 # Sliding Window
 
